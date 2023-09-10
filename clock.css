@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+    width: 30rem;
+    height: 40rem;
+    border: 1px solid black;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-image: linear-gradient(
+  45deg,
+  hsl(132deg 41% 33%) 0%,
+  hsl(176deg 100% 24%) 9%,
+  hsl(205deg 100% 40%) 18%,
+  hsl(216deg 100% 50%) 27%,
+  hsl(250, 98%, 63%) 36%,
+  hsl(271deg 100% 56%) 45%,
+  hsl(286deg 100% 53%) 55%,
+  hsl(297deg 100% 50%) 64%,
+  hsl(321deg 100% 50%) 73%,
+  hsl(21deg 100% 52%) 82%,
+  hsl(51deg 100% 46%) 91%,
+  hsl(135deg 100% 50%) 100%
+);
+}
+.square #circle{
+    border-radius: 50%;
+    border: 4px solid black;
+    width: 20rem;
+    height: 20rem;
+    margin-left: 5rem;
+    position: relative;
+    margin-bottom: 11rem;
+    box-shadow: 1px 1px 19px 3px #000000;
+    background-image: url();
+}
+#top,#left,#bottom,#right{
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    font-size: 1rem;
+    /*border: 1px solid black;*/
+}
+#top{
+    top: 0px;
+    margin-left: 145px;
+    font-size: 2rem;
+}
+#left{
+    left: 0px;
+    margin-top: 148px;
+    font-size: 2rem;
+}
+#bottom{
+    bottom: 0px;
+    margin-left: 149px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+#right{
+    right: 0px;
+    margin-top:  148px;
+    font-size: 2rem;
+}
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+}
+  
+#hour {
+    width: 10px;
+    height: 5rem;
+    top: 5rem;
+    left: 9.6rem; 
+    animation: ANIM 216000s infinite;
+    transform-origin: bottom;
+}
+  
+#minute {
+    width: 6px;
+    height: 6rem;
+    top: 4rem;
+    left: 9.7rem;
+    animation: ANIM 3600s infinite;
+    transform-origin: bottom;
+}
+  
+#second {
+    width: 3px;
+    height: 8rem;
+    top: 2rem;
+    left: 9.7rem;
+    animation: ANIM 60s infinite;
+    transform-origin: bottom;
+}
+/*@keyframes ANIM{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}*/
+.square #digital{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 1rem;
+}
+.square #names{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 24rem;
+}
+.square #date{
+    font-weight: bold;
+    margin-left: 6.6rem;
+}
+
